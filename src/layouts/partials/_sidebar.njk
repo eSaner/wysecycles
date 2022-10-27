@@ -1,0 +1,9 @@
+<aside class="sidebar">
+    {% if sidebar == "about" %}
+        {% renderFile "./src/content/partials/_sidebar-about.md" %}
+    {% else %}
+        {% renderFile "./src/content/partials/_sidebar.md" %}
+    {% endif %}
+</aside>
+{# Not sure why this closing div can't just be in the page.njk layout #}
+</div>

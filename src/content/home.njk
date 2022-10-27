@@ -1,0 +1,146 @@
+---
+layout: page.njk
+title: Home
+slug: .
+sidebar: false
+---
+
+<h1 class="screen-reader-text">Home</h1>
+
+<div class="splide slider">
+    <div class="splide__track">
+
+        <div class="splide__list slides">
+            <div class="splide__slide slide">
+                {% image "BenWyse_Website-17.jpg", "Ben Wyse repairs a bike on location at Eastern Mennonite University", "", "(max-width: 699px) 100vw, (max-width: 1555px) 90vw, 1400px" %}
+                <div class="slide-content bounce-in-right">
+                    <h2 class="slide-title">Fast & Convenient</h2>
+                    <p class="slide-caption">
+                        Our mobile repair station comes to you! <br>
+                        Scheduling a repair is quick and easy.
+                    </p>
+                    <a class="button" href="/contact">Schedule A Repair</a>
+                </div>
+            </div>
+            <div class="splide__slide slide">
+                {% image "picture-6.10-190.jpg", "Two children ride on the back of an Xtracycle while holding sunflowers", "", "(max-width: 699px) 100vw, (max-width: 1555px) 90vw, 1400px" %}
+                <div class="slide-content bounce-in-right">
+                    <h2 class="slide-title">Family Focused & <br>Commuter Friendly</h2>
+                    <p class="slide-caption">
+                        The best families cycle together. <br>
+                        We'll get your entire family rolling! <br>
+                        Cycle to work? We do too!
+                    </p>
+                    <a class="button" href="/xtracycle">Read More<span class="screen-reader-text"> about Xtracycle family and cargo bikes</span></a>
+                </div>
+            </div>
+            <div class="splide__slide slide">
+                {% image "BenWyse_Website-1.jpg", "A close up of a hand using a screwdriver to repair a bicycle shifter", "", "(max-width: 699px) 100vw, (max-width: 1555px) 90vw, 1400px" %}
+                <div class="slide-content bounce-in-left">
+                    <h2 class="slide-title">Commited to <br>Sustainability</h2>
+                    <p class="slide-caption">
+                        The "greenest" bike shop <br>
+                        in the country, our green <br>
+                        thumbs come from planting <br>
+                        seeds of sustainable business <br>
+                        and transportation.
+                    </p>
+                    <a class="button" href="/about">Read More<span class="screen-reader-text"> about Wyse Cycles</span></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<h2 id="services" class="h1">Services</h2>
+<img src="/assets/images/wyse-owl-hammer-trans.png" alt="A graphic of an owl with a hammer looking at a bicycle in a repair stand">
+
+<section class="services">
+    <div class="service">
+        <img src="/assets/icons/tools.svg">
+        <div>
+            {% renderTemplate "md" %}
+### Tuneups & Repairs
+From flat tires and basic tune-ups to full servicing and complete overhauls, all at a location convenient to you. It’s mobile repair at its finest!
+
+<a class="button" href="/service/tune-ups-repairs">Read More<span class="screen-reader-text"> about Tune-ups & Repairs</span></a>
+            {% endrenderTemplate %}
+        </div>
+    </div>
+    <div class="service">
+        <img class="icon" src="/assets/icons/bicycle.svg">
+        <div>
+            {% renderTemplate "md" %}
+### New Bikes & Custom Builds
+Looking for a new bike? We’ll help you select the right bike or custom combination of frame and parts. From kids balance bikes to adult commuter and cargo bikes, Wyse Cycles is ready to help with your unique requirements.
+
+<a class="button" href="/service/new-bikes">Read More<span class="screen-reader-text"> about new bikes and custom builds</span></a>
+            {% endrenderTemplate %}
+        </div>
+    </div>
+    <div class="service">
+        <img class="icon" src="/assets/icons/used.svg">
+        <div>
+            {% renderTemplate "md" %}
+### Used Bikes & Parts
+Restoring old and well-loved bikes is one of our specialties. No bike is too old or cheap for Wyse Cycles! Our extensive collection of used parts will get your bike rolling quickly and affordably.
+
+<a class="button" href="/service/used-bikes-parts">Read More<span class="screen-reader-text"> about used bikes and parts</span></a>
+            {% endrenderTemplate %}
+        </div>
+    </div>
+    <div class="service">
+        <img class="icon" src="/assets/images/xtracycle-logo-bw.png">
+        <div>
+            {% renderTemplate "md" %}
+### Xtracycle
+From kids and groceries, to pets and packages, Xtracycle is a cargo hauling champ. Test ride an Xtracycle at Wyse Cycles to transform what you think a bike is capable of carrying!
+
+<a class="button" href="/service/xtracycle">Read More<span class="screen-reader-text"> about Xtracycle</span></a>
+            {% endrenderTemplate %}
+        </div>
+    </div>
+    <div class="service">
+        <img class="icon" src="/assets/icons/cog.svg">
+        <div>
+            {% renderTemplate "md" %}
+### Parts & Accessories
+Give your bike some love! We stock helpful accessories like fenders, racks, battery and dynamo lights, and an eclectic mix of new parts and components.
+
+<a class="button" href="/service/parts-accessories">Read More<span class="screen-reader-text"> about parts and accessories</span></a>
+            {% endrenderTemplate %}
+        </div>
+    </div>
+    <div class="service">
+        <img class="icon" src="assets/icons/wheel.svg">
+        <div>
+            {% renderTemplate "md" %}
+### Wheel Building
+Hand-built wheels offer strength, durability, and custom options that machine-built wheels can only dream of. Wyse Cycles can craft a new wheel for you that will last a lifetime.
+
+<a class="button" href="/service/wheel-building">Read More<span class="screen-reader-text"> about wheel building</span></a>
+            {% endrenderTemplate %}
+        </div>
+    </div>
+</section>
+
+<h2 class="h1">In The Media</h2>
+
+<section class="media">
+    <a href="https://www.harrisonblog.com/2016/02/wyse-cycles-a-unique-take-on-bicycle-repair-in-the-bike-capital-of-virginia/" target="_blank">
+        {% image "harrisonblog-logo.png", "HarrisonBlog logo", "", "(max-width: 377px) 90vw, 340px" %}
+    </a>
+    <a href="/assets/images/bicycle-times.pdf" target="_blank">
+        {% image "bicycle-times-logo.jpg", "Bicycle Timese logo", "", "(max-width: 377px) 90vw, 340px" %}
+    </a>
+    <a href="https://newatlas.com/wyse-cycles-mobile-bicycle-repair/20304/" target="_blank">
+        {% image "gizmag.jpg", "Gizmag logo", "", "(max-width: 377px) 90vw, 340px" %}
+    </a>
+    <a href="https://www.wmra.org/the-spark/2012-06-22/bicycle-repairman-ben-wyse/" target="_blank">
+        {% image "wmra-logo.png", "WMRA logo", "", "(max-width: 377px) 90vw, 340px" %}
+    </a>
+    <a href="https://emu.edu/now/crossroads/2014/05/02/ben-wyse-99-bicycle-lifestyle-bicycle-livelihood/" target="_blank">
+        {% image "emu-logo.png", "Eeaster Mennonite University logo", "", "(max-width: 377px) 90vw, 340px" %}
+    </a>
+</section>

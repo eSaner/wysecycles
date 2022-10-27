@@ -1,0 +1,199 @@
+// Home page
+.home {
+    // Slider
+    .slider {
+        margin-bottom: 4rem;
+
+        .slides {
+            height: 90vh;
+            max-height: 800px;
+        }
+
+        .slide {
+            align-items: center;
+            display: flex;
+            justify-content: right;
+
+            picture {
+                width: 100%;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .slide-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 5rem;
+                position: absolute;
+                z-index: 10;
+                width: 100%;
+
+                > * {
+                    clear: both;
+                    opacity: 0;
+                }
+            }
+
+            .slide-title,
+            .slide-caption {
+                background-color: rgba(54,54,54,0.7);
+                color: #fff;
+                display: inline-block;
+                margin-bottom: 0.5rem;
+                padding: 0.5rem;
+            }
+
+            &.is-visible {
+                .slide-content > * {
+                    opacity: 1;
+                }
+
+                .bounce-in-right {
+                    > * {
+                        float: right;
+                    }
+
+                    .slide-title {
+                        -webkit-animation: bounceInRight 1s;
+                        animation: bounceInRight 1s;
+                    }
+
+                    .slide-caption {
+                        -webkit-animation: bounceInRight 1.5s;
+                        animation: bounceInRight 1.5s;
+                        text-align: right;
+                    }
+
+                    .button {
+                        -webkit-animation: bounceInRight 2s;
+                        animation: bounceInRight 2s;
+                    }
+                }
+
+                .bounce-in-left {
+                    > * {
+                        float: left;
+                    }
+
+                    .slide-title {
+                        -webkit-animation: bounceInLeft 1s;
+                        animation: bounceInLeft 1s;
+                    }
+
+                    .slide-caption {
+                        -webkit-animation: bounceInLeft 1.5s;
+                        animation: bounceInLeft 1.5s;
+                    }
+
+                    .button {
+                        -webkit-animation: bounceInLeft 2s;
+                        animation: bounceInLeft 2s;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 699px) {
+        .slider {
+            width: 100vw;
+            margin-left: -5vw;
+
+            .slides .slide {
+                .slide-content {
+                    > * {
+                        text-align: center !important;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 700px) {
+        .slider .slides .slide {
+            .slide-content {
+                display: block;
+            }
+            h2 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    main h2:not(.slide-title) {
+        margin-bottom: 0;
+        text-align: center;
+
+        + p:not(.slide-caption) {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0;
+        }
+    }
+
+    section {
+        padding-top: 3rem;
+
+        &.services {
+            padding-bottom: 6rem;
+        }
+    }
+
+    .service {
+        display: grid;
+        grid-template-columns: 4.75rem 1fr;
+        gap: 2.5rem 1rem;
+
+        img {
+            grid-row: span 2;
+            width: 100%;
+        }
+    }
+
+    .media {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            transition: 0.2s all;
+        }
+
+        > * {
+            max-width: 340px;
+            width: 100%;
+
+            &:hover,
+            &:focus {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    @media (min-width: 600px) {
+        .services {
+            display: grid;
+            gap: 3rem;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .service {
+            gap: 0 1.5rem;
+        }
+    }
+}
+

@@ -1,0 +1,29 @@
+footer {
+    background-color: #10161c;
+    color: #d1d1d1;
+
+    .widgets {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .credits {
+        background-color: black;
+        font-size: 1rem;
+        padding: 2rem 0;
+    }
+}
+
+@media (min-width: 600px) {
+    footer {
+        .widgets {
+            display: flex;
+            gap: 3rem;
+            justify-content: space-between;
+        }
+
+        .widget {
+            flex: 1;
+        }
+    }
+}

@@ -1,0 +1,1 @@
+Copyright WyseCycles.com | Site by [eSaner](https://esaner.com)

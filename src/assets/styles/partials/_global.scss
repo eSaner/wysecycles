@@ -1,0 +1,212 @@
+// Typography
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body {
+    //color: #34495e;
+    color: #343434;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 1.25rem;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quattrocento', serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.25em;
+}
+
+h1,
+.h1 {
+    font-size: 2.4em;
+    margin-bottom: 0.75em;
+    text-transform: uppercase;
+}
+
+h2,
+.h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+main h2 {
+    margin-top: 0.8em;
+}
+
+h3,
+.h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    font-size: 1.3em;
+    margin-bottom: 0.25em;
+
+}
+
+h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25em;
+}
+
+h6 {
+    font-size: 1em;
+    margin-bottom: 0.125em;
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+// Links
+#content,
+footer {
+    a:not(.button) {
+        color: var(--wyse-blue);
+        font-weight: 700;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+            text-underline-offset: 6px;
+            text-decoration-style: dotted;
+            text-decoration-thickness: 3px;
+        }
+    }
+}
+
+// Buttons
+a.button {
+    background-color: var(--wyse-blue);
+    border-radius: 0.25rem;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        background-color: darken(#3498db, 20%);
+    }
+}
+
+// Lists
+ul {
+    margin: 0 0 1rem;
+
+    a {
+        font-weight: 400;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+}
+
+// Blockquotes
+blockquote {
+    background: #f2f2f2;
+    border-radius: 2rem;
+    margin: 2rem 0.25rem;
+    outline: 0.25rem solid var(--wyse-blue);
+    padding: 2rem;
+}
+
+// Images
+img {
+    height: auto;
+    margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+    img {
+        &.align-right,
+        &.align-left {
+            max-width: 50%;
+        }
+
+        &.align-right {
+            float: right;
+            margin: 0rem 0 2rem 2rem;
+        }
+
+        &.align-left {
+            float: left;
+            margin: 0rem 2rem 2rem 0;
+        }
+    }
+}
+
+// Layout
+.container {
+    margin: 0 auto;
+    max-width: 90vw;
+    width: 87.5rem
+}
+
+#content {
+    padding-top: 1rem;
+    padding-bottom: 6rem;
+}
+
+@media (min-width: 960px) {
+    #content {
+        display: flex;
+        gap: 5%;
+
+        aside {
+            flex: 0 0 25vw;
+        }
+    }
+}
+
+// a11y
+.screen-reader-text {
+    border: 0;
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    float: left;
+
+    &.focus-highlight:focus {
+        background-color: #f2f2f2;
+        border-radius: 0.25rem;
+        color: var(--wyse-blue);
+        font-size: 1.25em;
+        font-weight: 700;
+        height: auto;
+        padding: 1rem;
+        position: absolute;
+        text-decoration: none;
+        left: 2rem;
+        top: 2rem;
+        width: auto;
+    }
+}

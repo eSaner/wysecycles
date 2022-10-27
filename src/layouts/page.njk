@@ -1,0 +1,24 @@
+---
+layout: base.njk
+---
+
+<a class="skip-link screen-reader-text focus-highlight" href="#content">Skip to main content</a>
+
+{% include "partials/_header.njk" %}
+
+<div id="content" class="container">
+
+    <main>
+        {{ content | safe }}
+    </main>
+
+    {% if sidebar !== false %}
+        {% include "partials/_sidebar.njk" %}
+    {% else %}
+        {# Not sure why this closing div needs to be wrapped in an else #}
+        </div>
+    {% endif %}
+
+
+
+{% include "partials/_footer.njk" %}
