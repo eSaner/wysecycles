@@ -9,7 +9,7 @@ slug: contact
 
 ## Urgent repairs or just want to chat?
 
-**Call or text us at [(540) 383-4119](tel:5403838349).**
+**Call or text us at [(540) 383-4119](tel:5403834119).**
 
 **Or email us at <ben@wysecycles.com>.**
 
